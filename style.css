@@ -19,6 +19,10 @@ ul {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.list .list-title {
+  font-weight: bold;
+  font-size: 14px;
+}
 
 .list > li:first-child {
   padding-top: 0;
@@ -27,6 +31,7 @@ ul {
 /* layout */
 body {
   background-color: #f7f7f7;
+  transition: all 1s;
 }
 
 header {
@@ -135,27 +140,30 @@ section {
   border: 0;
   opacity: 0.7;
 }
-#project .project .project-header .ph-title {
+#project .project .project-header .title {
   padding-bottom: 5px;
   font-size: 14pt;
   font-weight: bold;
   opacity: 0.7;
 }
-#project .project .project-header .ph-title i {
+#project .project .project-header .title i {
   padding-right: 1%;
   opacity: 0.7;
   color: #6db33f;
 }
-#project .project .project-header .ph-title a:link {
+#project .project .project-header .title a {
+  text-decoration: none;
+}
+#project .project .project-header .title a:link {
   color: black;
 }
-#project .project .project-header .ph-title a:visited {
+#project .project .project-header .title a:visited {
   color: black;
 }
-#project .project .project-header .ph-title a:hover {
+#project .project .project-header .title a:hover {
   color: grey;
 }
-#project .project .project-header .ph-subtitle {
+#project .project .project-header .subtitle {
   opacity: 0.7;
 }
 #project .project .project-body {
@@ -171,6 +179,7 @@ section {
   padding-bottom: 5%;
   font-size: 15px;
   font-weight: bold;
+  opacity: 0.8;
 }
 #project .project .project-body .pb-left .pbl-subtitle {
   font-size: 10pt;
@@ -180,167 +189,93 @@ section {
 #project .project .project-body .pb-right {
   width: 80%;
 }
+#project .project .project-body .pb-right .simple {
+  padding: 0 10px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+#project .project .project-body .pb-right .detail {
+  display: none;
+}
+#project .project .project-body .pb-right .hs {
+  padding: 0 10px;
+  float: right;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  opacity: 0.7;
+}
+#project .project .project-body .pb-right button:hover {
+  opacity: 0.3;
+}
 
 #skills hr {
-  margin: 5% 0 5% 0;
-  background-color: #6db33f;
+  margin: 8% 0 6% 0;
   height: 1px;
   border: 0;
   opacity: 0.7;
 }
-#skills .skills .category {
-  font-size: 18px;
+#skills .skills .skills-title {
+  padding-left: 2%;
+  padding-bottom: 4%;
+  font-size: 22px;
   font-weight: bold;
   opacity: 0.7;
 }
-#skills .skills .skills-item {
-  display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
+#skills .skills .tab {
+  overflow: hidden;
 }
-#skills .skills .skills-item .si-header {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  width: 15%;
-  border-radius: 10px;
+#skills .skills .tab button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.4;
 }
-#skills .skills .skills-item .si-header .sih-title {
-  padding-right: 30px;
-  text-align: center;
-  font-weight: bold;
-  opacity: 0.7;
+#skills .skills .tab button:hover {
+  opacity: 1;
 }
-#skills .skills .skills-item .si-body {
-  width: 85%;
-  border-radius: 10px;
-  border-left: 2px solid;
+#skills .skills .tab button.active {
+  opacity: 1;
 }
-#skills .skills .skills-item .java {
-  color: #cc342f;
-  border-color: rgba(204, 52, 47, 0.7);
+#skills .skills .tabcontent {
+  display: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 20px;
 }
-#skills .skills .skills-item .java li::marker {
-  color: rgba(204, 52, 47, 0.7);
+#skills .skills .tabcontent .skills-item {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  padding: 3% 0 3% 0;
 }
-#skills .skills .skills-item .spring {
-  color: #6db33f;
-  border-color: rgba(109, 179, 63, 0.7);
+#skills .skills .tabcontent .skills-item .skills-item-title {
+  margin-left: 3%;
 }
-#skills .skills .skills-item .spring li::marker {
-  color: rgba(109, 179, 63, 0.7);
+#skills .skills .tabcontent .skills-item .skills-item-title img {
+  height: 40px;
 }
-#skills .skills .skills-item .jpa {
-  color: #59676a;
-  border-color: rgba(89, 103, 106, 0.7);
+#skills .skills .tabcontent .skills-item .list {
+  padding: 20px 20px 20px 30px;
 }
-#skills .skills .skills-item .jpa li::marker {
-  color: rgba(89, 103, 106, 0.7);
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-#skills .skills .skills-item .mybatis {
-  color: #d40000;
-  border-color: rgba(212, 0, 0, 0.7);
-}
-#skills .skills .skills-item .mybatis li::marker {
-  color: rgba(212, 0, 0, 0.7);
-}
-#skills .skills .skills-item .jsp {
-  color: #e56f1f;
-  border-color: rgba(229, 111, 31, 0.7);
-}
-#skills .skills .skills-item .jsp li::marker {
-  color: rgba(229, 111, 31, 0.7);
-}
-#skills .skills .skills-item .thymeleaf {
-  color: #005f0f;
-  border-color: rgba(0, 95, 15, 0.7);
-}
-#skills .skills .skills-item .thymeleaf li::marker {
-  color: rgba(0, 95, 15, 0.7);
-}
-#skills .skills .skills-item .linux {
-  color: #616161;
-  border-color: rgba(97, 97, 97, 0.7);
-}
-#skills .skills .skills-item .linux li::marker {
-  color: rgba(97, 97, 97, 0.7);
-}
-#skills .skills .skills-item .docker {
-  color: #2497ed;
-  border-color: rgba(36, 151, 237, 0.7);
-}
-#skills .skills .skills-item .docker li::marker {
-  color: rgba(36, 151, 237, 0.7);
-}
-#skills .skills .skills-item .kafka {
-  color: #000000;
-  border-color: rgba(204, 52, 47, 0.7);
-}
-#skills .skills .skills-item .kafka li::marker {
-  color: rgba(204, 52, 47, 0.7);
-}
-#skills .skills .skills-item .html {
-  color: #e34e26;
-  border-color: rgba(227, 78, 38, 0.7);
-}
-#skills .skills .skills-item .html li::marker {
-  color: rgba(227, 78, 38, 0.7);
-}
-#skills .skills .skills-item .css {
-  color: #156eb0;
-  border-color: rgba(21, 110, 176, 0.7);
-}
-#skills .skills .skills-item .css li::marker {
-  color: rgba(21, 110, 176, 0.7);
-}
-#skills .skills .skills-item .bootstrap {
-  color: #563d7c;
-  border-color: rgba(86, 61, 124, 0.7);
-}
-#skills .skills .skills-item .bootstrap li::marker {
-  color: rgba(86, 61, 124, 0.7);
-}
-#skills .skills .skills-item .javascript {
-  color: #ead31c;
-  border-color: rgba(234, 211, 28, 0.7);
-}
-#skills .skills .skills-item .javascript li::marker {
-  color: rgba(234, 211, 28, 0.7);
-}
-#skills .skills .skills-item .react {
-  color: #0ad7ff;
-  border-color: rgba(10, 215, 255, 0.7);
-}
-#skills .skills .skills-item .react li::marker {
-  color: rgba(10, 215, 255, 0.7);
-}
-#skills .skills .skills-item .rdbms {
-  color: #59676a;
-  border-color: rgba(89, 103, 106, 0.7);
-}
-#skills .skills .skills-item .rdbms li::marker {
-  color: rgba(89, 103, 106, 0.7);
-}
-#skills .skills .skills-item .nosql {
-  color: #59676a;
-  border-color: rgba(89, 103, 106, 0.7);
-}
-#skills .skills .skills-item .nosql li::marker {
-  color: rgba(89, 103, 106, 0.7);
-}
-#skills .skills .skills-item .git {
-  color: #f05133;
-  border-color: rgba(240, 81, 51, 0.7);
-}
-#skills .skills .skills-item .git li::marker {
-  color: rgba(240, 81, 51, 0.7);
-}
-#skills .skills .skills-item .arduino {
-  color: #00979c;
-  border-color: rgba(0, 151, 156, 0.7);
-}
-#skills .skills .skills-item .arduino li::marker {
-  color: rgba(0, 151, 156, 0.7);
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .timeline li {
@@ -371,6 +306,117 @@ section {
   border-radius: 50%;
   top: 17%;
   left: -23px;
+}
+
+.java {
+  color: #cc342f;
+  background-color: #cc342f;
+  border: 1px solid #cc342f;
+}
+
+.spring {
+  background-color: #6db33f;
+  border: 1px solid #6db33f;
+}
+
+.jpa {
+  background-color: #59676a;
+  border: 1px solid #59676a;
+}
+
+.mybatis {
+  background-color: #d40000;
+  border: 1px solid #d40000;
+}
+
+.jsp {
+  background-color: #e56f1f;
+  border: 1px solid #e56f1f;
+}
+
+.thymeleaf {
+  background-color: #005f0f;
+  border: 1px solid #005f0f;
+}
+
+.linux {
+  background-color: #FCC624;
+  border: 1px solid #FCC624;
+}
+
+.docker {
+  background-color: #2497ed;
+  border: 1px solid #2497ed;
+}
+
+.kafka {
+  background-color: #59676A;
+  border: 1px solid #59676A;
+}
+
+.aws {
+  background-color: #232F3E;
+  border: 1px solid #232F3E;
+}
+
+.html {
+  background-color: #E34F26;
+  border: 1px solid #E34F26;
+}
+
+.css {
+  background-color: #1572B6;
+  border: 1px solid #1572B6;
+}
+
+.bootstrap {
+  background-color: #7952B3;
+  border: 1px solid #7952B3;
+}
+
+.javascript {
+  background-color: #F7DF1E;
+  border: 1px solid #F7DF1E;
+}
+
+.react {
+  background-color: #61DAFB;
+  border: 1px solid #61DAFB;
+}
+
+.mysql {
+  background-color: #4479A1;
+  border: 1px solid #4479A1;
+}
+
+.mariadb {
+  background-color: #003545;
+  border: 1px solid #003545;
+}
+
+.oracle {
+  background-color: #F80000;
+  border: 1px solid #F80000;
+}
+
+.mongodb {
+  background-color: #47A248;
+  border: 1px solid #47A248;
+}
+
+.git {
+  background-color: #F05032;
+  border: 1px solid #F05032;
+}
+
+.github {
+  background-color: #181717;
+  border: 1px solid #181717;
+}
+
+.arduino {
+  background-color: #00979D;
+  border: 1px solid #00979D;
 }
 
 /*# sourceMappingURL=style.css.map */
