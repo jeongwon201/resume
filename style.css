@@ -30,6 +30,7 @@ ul {
 
 /* layout */
 body {
+  position: relative;
   background-color: #f7f7f7;
   transition: all 1s;
 }
@@ -42,6 +43,13 @@ footer {
   height: 100px;
 }
 
+#clip {
+  position: absolute;
+  top: 93px;
+  left: 72%;
+  transform: rotate(3deg);
+}
+
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -52,36 +60,33 @@ main {
 #banner {
   display: flex;
   flex-direction: column;
-  height: 370px;
+  height: 330px;
   background-color: rgb(146, 215, 100);
-  border-bottom-right-radius: 150px;
+  border-bottom-right-radius: 80px;
   margin-bottom: 10%;
 }
 #banner .banner-title {
-  display: flex;
-  flex-direction: column;
-  padding: 5% 5% 5% 6%;
+  height: 60%;
+  padding: 5% 7%;
 }
 #banner .banner-title .title {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 4px;
 }
 #banner .banner-title .subtitle {
-  padding-top: 1%;
-  width: 780px;
-  text-align: right;
   color: white;
-  font-size: 24px;
+  font-size: 29px;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 }
 #banner #contact {
-  padding-left: 7%;
+  height: 40%;
 }
 #banner #contact .contact-info {
   display: flex;
+  padding-left: 7%;
 }
 #banner #contact .contact-info ul {
   padding: 0;
@@ -89,8 +94,7 @@ main {
   list-style-type: none;
   color: white;
   font-size: 15px;
-  font-weight: 100;
-  opacity: 0.9;
+  opacity: 1;
 }
 #banner #contact .contact-info ul a:link {
   color: white;
@@ -103,6 +107,7 @@ main {
 }
 #banner #contact .contact-info ul a {
   text-decoration: none;
+  padding-right: 5px;
 }
 #banner #contact .contact-info i {
   padding-right: 3%;
@@ -124,7 +129,7 @@ article {
 }
 
 section {
-  padding: 6% 3% 20% 3%;
+  padding: 6% 2% 20% 2%;
 }
 
 #aboutme .aboutme-content {
@@ -173,7 +178,7 @@ section {
 #project .project .project-body .pb-left {
   width: 20%;
 }
-#project .project .project-body .pb-left .pbl-title {
+#project .project .project-body .pb-left .type {
   margin: 0;
   padding: 0;
   padding-bottom: 5%;
@@ -181,7 +186,12 @@ section {
   font-weight: bold;
   opacity: 0.8;
 }
-#project .project .project-body .pb-left .pbl-subtitle {
+#project .project .project-body .pb-left .task {
+  font-size: 11pt;
+  padding: 0;
+  opacity: 0.7;
+}
+#project .project .project-body .pb-left .period {
   font-size: 10pt;
   padding: 0;
   opacity: 0.7;
@@ -248,7 +258,6 @@ section {
   padding: 5px 20px;
 }
 #skills .skills .tabcontent .skills-item {
-  -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
   padding: 3% 0 3% 0;
 }
@@ -260,14 +269,6 @@ section {
 }
 #skills .skills .tabcontent .skills-item .list {
   padding: 20px 20px 20px 30px;
-}
-@-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 @keyframes fadeEffect {
   from {
@@ -340,8 +341,8 @@ section {
 }
 
 .linux {
-  background-color: #FCC624;
-  border: 1px solid #FCC624;
+  background-color: #fcc624;
+  border: 1px solid #fcc624;
 }
 
 .docker {
@@ -350,43 +351,43 @@ section {
 }
 
 .kafka {
-  background-color: #59676A;
-  border: 1px solid #59676A;
+  background-color: #59676a;
+  border: 1px solid #59676a;
 }
 
 .aws {
-  background-color: #232F3E;
-  border: 1px solid #232F3E;
+  background-color: #232f3e;
+  border: 1px solid #232f3e;
 }
 
 .html {
-  background-color: #E34F26;
-  border: 1px solid #E34F26;
+  background-color: #e34f26;
+  border: 1px solid #e34f26;
 }
 
 .css {
-  background-color: #1572B6;
-  border: 1px solid #1572B6;
+  background-color: #1572b6;
+  border: 1px solid #1572b6;
 }
 
 .bootstrap {
-  background-color: #7952B3;
-  border: 1px solid #7952B3;
+  background-color: #7952b3;
+  border: 1px solid #7952b3;
 }
 
 .javascript {
-  background-color: #F7DF1E;
-  border: 1px solid #F7DF1E;
+  background-color: #f7df1e;
+  border: 1px solid #f7df1e;
 }
 
 .react {
-  background-color: #61DAFB;
-  border: 1px solid #61DAFB;
+  background-color: #61dafb;
+  border: 1px solid #61dafb;
 }
 
 .mysql {
-  background-color: #4479A1;
-  border: 1px solid #4479A1;
+  background-color: #4479a1;
+  border: 1px solid #4479a1;
 }
 
 .mariadb {
@@ -395,18 +396,18 @@ section {
 }
 
 .oracle {
-  background-color: #F80000;
-  border: 1px solid #F80000;
+  background-color: #f80000;
+  border: 1px solid #f80000;
 }
 
 .mongodb {
-  background-color: #47A248;
-  border: 1px solid #47A248;
+  background-color: #47a248;
+  border: 1px solid #47a248;
 }
 
 .git {
-  background-color: #F05032;
-  border: 1px solid #F05032;
+  background-color: #f05032;
+  border: 1px solid #f05032;
 }
 
 .github {
@@ -415,8 +416,6 @@ section {
 }
 
 .arduino {
-  background-color: #00979D;
-  border: 1px solid #00979D;
-}
-
-/*# sourceMappingURL=style.css.map */
+  background-color: #00979d;
+  border: 1px solid #00979d;
+}/*# sourceMappingURL=style.css.map */
