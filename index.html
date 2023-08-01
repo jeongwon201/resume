@@ -5,1422 +5,992 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <script
-      src="https://kit.fontawesome.com/22e6476155.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/22e6476155.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header></header>
 
-    <div id="clip">
-      <img src="images/clip.png" />
-    </div>
-
-    <main>
-      <div id="banner">
-        <div class="banner-title">
-          <div class="title">DYNAMIC BACKEND DEVELOPER:</div>
-          <div class="subtitle">Adapable to New Technologies</div>
-        </div>
-
-        <div id="contact">
-          <div class="contact-info">
-            <ul class="list">
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:jeongwon201@naver.com">EMAIL</a>
-              </li>
-              <li>
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/jeongwon201">GITHUB</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+    <section>
       <article>
-        <div class="section-title">ABOUT ME</div>
-        <section id="aboutme">
-          <p class="aboutme-content">
-            안녕하십니까, 신입 백엔드 개발자 이정원입니다.<br />
-            <br />
-
-            주로 자바와 스프링 프레임워크로 백엔드 개발을 해왔습니다.<br />
-            재학 중 다수의 팀 프로젝트에서 팀장을 담당하였습니다.<br />
-            팀장으로서 리더십을 발휘하여 프로젝트를 주도하고 팀원들과 원활한
-            협업을 이끌어냈습니다.<br />
-            <br />
-
-            새로운 기술과 아키텍처를 학습하고 적용하여 프로세스를 개선하는 것에
-            큰 보람을 느낍니다.<br />
-            IT 업계의 빠른 변화에 거부감 없이 매일 학습하고 성장하는 개발자로서,
-            전문성을 발휘할 준비가 되어있습니다.<br />
-            <br />
-
-            면접에 대비하여 기술적인 스킬과 프로젝트 경험에 대해 더 자세히
-            설명드릴 수 있습니다.<br />
-            <br />
-
-            감사합니다.
-          </p>
-        </section>
-        <!-- <section>
-        <h2>WORK EXPERIENCE</h2>
-        
-      </section> -->
-        <div class="section-title">PROJECT</div>
-        <section id="project">
-          <div class="project">
-            <div class="project-header">
-              <div class="title">
-                <i class="fas fa-users"></i>
-                <a
-                  href="https://github.com/jeongwon201/project-pm"
-                  target="_blank"
-                  >포트폴리오 매칭 웹 애플리케이션</a
-                >
-              </div>
-              <div class="subtitle">
-                사용자 간 포트폴리오 거래를 목적으로하는 E-Commerce 웹
-                애플리케이션
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="pb-left">
-                <div class="type">팀 프로젝트</div>
-                <div class="task">기획 및 개발</div>
-                <div class="period">2021.03. ~ 2021.12.</div>
-              </div>
-              <div class="pb-right">
-                <div class="simple">
-                  '포트폴리오 매칭'은 사용자 간 포트폴리오를 거래하는 이커머스
-                  웹 애플리케이션입니다. Java 8 과 Spring Framework, JSP 등을
-                  활용하여 개발되었으며, 사용자 인증 및 계정 관리, 포트폴리오
-                  등록 및 거래, 마이페이지, 관리자 서비스 등이 구현되어
-                  있습니다.
+        <ul class="cards">
+          <li id="1" class="card">
+            <container id="first-page">
+              <header>
+                <div class="content">
+                  <div class="title">DYNAMIC BACKEND DEVELOPER:</div>
+                  <div class="subtitle">Adapable to New Technologies</div>
                 </div>
-                <div class="detail">
-                  <ul class="list">
-                    <li>
-                      <b>기술 스택</b>
-                      <ul>
-                        <li>주요 언어: Java 8</li>
-                        <li>웹 프레임워크: Spring Framework 5.0.7</li>
-                        <li>
-                          프론트 엔드: HTML, CSS, Bootstrap, JavaScript, JQuery
-                        </li>
-                        <li>뷰 템플릿 엔진: JSP, JSTL</li>
-                        <li>데이터베이스: MariaDB, MyBatis 3</li>
-                        <li>기타: 카카오 결제 API</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>기능과 특징</b>
-                      <ul>
-                        <li>
-                          사용자 인증 및 계정 관리: 사용자 로그인 및 회원가입을
-                          처리하는 기능으로, 사용자 계정 관리를 담당합니다.
-                        </li>
-                        <li>
-                          포트폴리오 등록: 사용자들은 자신의 포트폴리오를 등록할
-                          수 있습니다.
-                        </li>
-                        <li>
-                          포트폴리오 거래: 사용자들은 등록된 포트폴리오를 거래할
-                          수 있으며, 거래 관련 기능을 제공합니다.
-                        </li>
-                        <li>
-                          카테고리 별 포트폴리오 목록 및 검색: 사용자들은
-                          카테고리별로 포트폴리오를 검색하고, 관련 목록을 확인할
-                          수 있습니다.
-                        </li>
-                        <li>
-                          마이페이지 서비스: 구매 및 판매 관리, 내 정보 관리,
-                          리뷰 관리, 문의 관리 등의 기능을 제공합니다.
-                        </li>
-                        <li>
-                          관리자 서비스: 사이트 관리자가 수행할 수 있는 기능을
-                          제공합니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>역할과 기여</b>
-                      <ul>
-                        <li>팀원 간 의견 조율과 역할 배분을 담당했습니다.</li>
-                        <li>
-                          마이페이지 서비스, 관리자 서비스에서 포트폴리오 관리
-                          서비스, 트랜드 포트폴리오 상위 노출, 포트폴리오 검색,
-                          카테고리 UI를 구현하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>결과 및 성과</b>
-                      <ul>
-                        <li>
-                          프로젝트는 사용자들이 포트폴리오를 등록 및 관리하고
-                          거래하는 기능을 모두 구현하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>어려웠던 점과 극복 방법</b>
-                      <ul>
-                        <li>
-                          결제 API에 대한 지식이 없는 상태에서 마이페이지 서비스
-                          중 결제와 연관된 기능을 구현하는 것이 어려웠습니다.
-                        </li>
-                        <li>
-                          팀원들과의 커뮤니케이션을 통해 필요한 지식을 습득하고,
-                          추가적으로 스터디를 진행하여 해결하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>배운 점과 성장</b>
-                      <ul>
-                        <li>
-                          프로젝트를 통해 REST API를 이용한 외부 API 활용에 대한
-                          지식을 얻을 수 있었습니다.
-                        </li>
-                        <li>
-                          실제 운영 환경을 위해 고려해야 할 사항들에 대해 깊이
-                          이해하게 되었으며, 보다 정교한 설계와 개발에 대한
-                          경험을 쌓을 수 있었습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- <li>
-                    <b>개선점과 향후 계획</b>
-                    <ul>
-                      <li>사용자들이 판매로 인한 수익을 현금으로 교환하는 기능을 추가하여 서비스를 더욱 확장하고자 합니다. 또한 UI 개선을 통해 사용자 경험을 향상시키는 것이 향후 계획입니다.</li>
-                    </ul>
-                  </li> -->
+              </header>
+
+              <aside>
+                <div id="my-image">
+                  <img src="" />
+                </div>
+
+                <div id="contact" class="content">
+                  <div class="content-title">CONTACT</div>
+                  <ul class="items">
+                    <li class="item"><i class="fas fa-phone"></i> 010 0000 0000</li>
+                    <li class="item"><i class="fas fa-envelope"></i> <a href="mailto:jeongwon201@naver.com">jeongwon201@naver.com</a></li>
+                    <li class="item"><i class="fab fa-github"></i> <a href="https://github.com/jeongwon201" target="_blank">GITHUB</a></li>
                   </ul>
                 </div>
-                <button class="hs">자세히</button>
-              </div>
-            </div>
-          </div>
 
-          <hr />
-
-          <div class="project">
-            <div class="project-header">
-              <div class="title">
-                <i class="fas fa-user"></i>
-                <a href="https://github.com/jeongwon201/project-search"
-                  >추천 키워드 검색 웹 애플리케이션</a
-                >
-              </div>
-              <div class="subtitle">
-                사용자에게 추천 검색어를 제공하는 상품 검색 웹 애플리케이션
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="pb-left">
-                <div class="type">개인 프로젝트</div>
-                <div class="task">기획 및 개발</div>
-                <div class="period">2021.09. ~ 2021.12.</div>
-              </div>
-              <div class="pb-right">
-                <div class="simple">
-                  '추천 키워드 검색 웹 애플리케이션'은 사용자에게 추천 키워드를
-                  제공하는 상품 검색 웹 애플리케이션입니다. Java 8 과 Python,
-                  Spring Boot, Thymeleaf 등을 활용하여 개발되었으며, TF-IDF
-                  기반의 코사인 유사도 알고리즘을 활용하여 추천 키워드를
-                  제공합니다. 검색 바에서 키워드를 입력하면 자동완성으로 추천
-                  키워드가 나타나며, 상품 리스트 페이지에서도 추천 키워드
-                  영역에서 추천을 제공합니다.
-                </div>
-                <div class="detail">
-                  <ul class="list">
+                <div id="education" class="content">
+                  <div class="content-title">EDUCATION</div>
+                  <ul class="timeline">
                     <li>
-                      <b>기술 스택</b>
-                      <ul>
-                        <li>주요 언어: Java 8, Python 3</li>
-                        <li>프레임워크: Spring Boot 2.5.4.</li>
-                        <li>프론트 엔드: HTML, CSS, JavaScript, Jquery</li>
-                        <li>뷰 템플릿 엔진: ThymeLeaf</li>
-                        <li>데이터베이스: MySQL, JPA</li>
-                        <li>머신 러닝 라이브러리: Pandas, scikit-learn</li>
-                        <li>기타: Lombok, Gradle, JEP, 네이버 쇼핑 검색 API</li>
-                      </ul>
+                      <div class="title">경민대학교 전공 심화 과정</div>
+                      <div class="subtitle">2020.03. ~ 2021.02.</div>
                     </li>
                     <li>
-                      <b>기능과 특징</b>
-                      <ul>
-                        <li>
-                          네이버 쇼핑 검색 API를 활용한 상품 검색 기능: 사용자가
-                          원하는 상품을 검색할 수 있습니다.
-                        </li>
-                        <li>
-                          TF-IDF 기반의 코사인 유사도를 활용한 키워드 추천
-                          알고리즘: 사용자의 검색어와 관련하여 추천 검색어를
-                          제공합니다.
-                        </li>
-                        <li>
-                          프로젝트에서는 머신 러닝 기술인 TF-IDF 기반의 코사인
-                          유사도를 활용하여 검색어와 관련된 추천 검색어를
-                          제공합니다. 이를 통해 사용자들에게 더욱 정확하고
-                          유용한 검색어를 제공하는 특징을 갖고 있습니다.
-                        </li>
-                      </ul>
+                      <div class="title">경민대학교 융합 소프트웨어과</div>
+                      <div class="subtitle">2016.03. ~ 2020.02.</div>
                     </li>
                     <li>
-                      <b>역할과 기여</b>
-                      <ul>
-                        <li>
-                          개인 프로젝트로 모든 부분에 기여하였으며, 모든 기능의
-                          설계와 개발을 진행하였습니다.
-                        </li>
-                      </ul>
+                      <div class="title">덕정 고등학교</div>
+                      <div class="subtitle">2013.03. ~ 2016.01.</div>
                     </li>
-                    <li>
-                      <b>결과 및 성과</b>
-                      <ul>
-                        <li>
-                          상품 검색 기능과 추천 검색어 기능을 모두
-                          구현하였습니다.
-                        </li>
-                        <li>
-                          사용자들은 원하는 상품을 빠르게 검색하고, 추천
-                          검색어를 통해 더욱 다양한 상품을 발견할 수 있어 검색
-                          경험이 향상되었습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>어려웠던 점과 극복 방법</b>
-                      <ul>
-                        <li>
-                          JVM 특성 상 Java와 Python을 같이 실행하는 것에
-                          어려움이 많았습니다.
-                        </li>
-                        <li>
-                          Java Embedded Python 라이브러리를 활용하여 JVM 위에서
-                          Python을 사용하여 문제를 해결하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>배운 점과 성장</b>
-                      <ul>
-                        <li>
-                          프로젝트를 통해 JVM 환경에서 Python 사용을
-                          가능하게하는 기술을 학습하였습니다. 이를 통해 다양한
-                          언어를 융합하여 더욱 다양하고 유연한 개발이
-                          가능해졌습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- <li>
-                    <b>개선점과 향후 계획</b>
-                    <ul>
-                      <li>향후에는 더 다양한 데이터 분석 방법을 적용하여 상품 추천 등 다양한 기능을 추가할 계획입니다. 또한 사용자들의 검색 패턴과 취향을 분석하여 보다 정교한 추천 기능을 구현하고, 사용자 경험을 향상시킬 예정입니다.</li>
-                    </ul>
-                  </li> -->
                   </ul>
                 </div>
-                <button class="hs">자세히</button>
-              </div>
-            </div>
-          </div>
 
-          <hr />
-
-          <div class="project">
-            <div class="project-header">
-              <div class="title">
-                <i class="fas fa-user"></i>
-                <a href="https://github.com/jeongwon201/project-tactics"
-                  >축구 전술 시뮬레이터</a
-                >
-              </div>
-              <div class="subtitle">
-                축구 전술 시뮬레이션을 제작 및 공유하여 커뮤니케이션을 할 수
-                있는 웹 애플리케이션
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="pb-left">
-                <div class="type">개인 프로젝트</div>
-                <div class="task">기획 및 개발</div>
-                <div class="period">2021.03. ~ 2021.06.</div>
-              </div>
-              <div class="pb-right">
-                <div class="simple">
-                  '축구 전술 시뮬레이터'는 축구 전술 시뮬레이션을 제작하고
-                  공유하는 웹 애플리케이션입니다. Java 8와 Spring Framework 등을
-                  활용하여 개발되었으며, 사용자들은 등록된 선수들로 전술을
-                  구상하고 관리할 수 있습니다. 시뮬레이션을 재생하여 생생한
-                  움직임을 확인할 수 있고, 디스플레이를 통해 시뮬레이션 결과를
-                  보여줍니다. 이 외 사용자 인증 및 계정 관리, 선수 관리, 전술
-                  관리 등의 기능을 구현하였습니다.
-                </div>
-                <div class="detail">
-                  <ul class="list">
+                <div id="certificate" class="content">
+                  <div class="content-title">CERTIFICATE</div>
+                  <ul class="timeline">
                     <li>
-                      <b>기술 스택</b>
-                      <ul>
-                        <li>주요 언어: Java 8</li>
-                        <li>프레임워크: Spring Framework 5.0.7</li>
-                        <li>프론트 엔드: HTML, CSS, JavaScript, JQuery</li>
-                        <li>뷰 템플릿 엔진: JSP, JSTL</li>
-                        <li>데이터베이스: Oracle, MyBatis</li>
-                        <li>기타: Maven</li>
-                      </ul>
+                      <div class="title">정보 처리 기사</div>
+                      <div class="subtitle">2021.06.</div>
                     </li>
-                    <li>
-                      <b>기능과 특징</b>
-                      <ul>
-                        <li>
-                          사용자 인증 및 계정 관리: 사용자는 회원 가입을 통해
-                          계정을 생성하고 로그인하여 서비스를 이용할 수
-                          있습니다.
-                        </li>
-                        <li>
-                          전술 관리: 사용자는 자신이 만든 축구 전술 시뮬레이션을
-                          등록하고 관리할 수 있습니다.
-                        </li>
-                        <li>
-                          전술 토론 게시판: 사용자들은 각자의 전술에 대해
-                          토론하고 의견을 나눌 수 있는 게시판을 이용할 수
-                          있습니다.
-                        </li>
-                        <li>
-                          시뮬레이션 재생 기능: 제작한 시뮬레이션을 재생하여
-                          생생한 움직임을 시각적으로 확인할 수 있습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>역할과 기여</b>
-                      <ul>
-                        <li>
-                          개인 프로젝트로 모든 부분에 기여하였으며, 모든 기능의
-                          설계와 개발을 진행하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>결과 및 성과</b>
-                      <ul>
-                        <li>
-                          사용자는 로그인 및 사용자 정보 관리가 가능합니다.
-                        </li>
-                        <li>
-                          사용자는 전술 시뮬레이션을 제작하고 관리할 수 있으며,
-                          제작한 시뮬레이션은 게시판을 통해 공유가 가능합니다.
-                        </li>
-                        <li>
-                          댓글 기능을 통해 전술에 대한 커뮤니케이션이
-                          이루어집니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>어려웠던 점과 극복 방법</b>
-                      <ul>
-                        <li>복잡한 데이터 표현에 어려움을 겪었습니다.</li>
-                        <li>
-                          다양한 방식으로 데이터를 표현할 수 있음을 학습하고,
-                          텍스트 파일을 활용하여 복잡한 데이터를 효과적으로 다룰
-                          수 있도록 해결하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>배운 점과 성장</b>
-                      <ul>
-                        <li>
-                          프로젝트를 통해 RDBMS에 국한되지 않는 많은 데이터 표현
-                          방식에 대해 학습할 수 있었습니다. 이를 통해 데이터의
-                          다양한 형태를 처리하는 능력이 향상되었습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- <li>
-                    <b>개선점과 향후 계획</b>
-                    <ul>
-                      <li>UI와 JS 애니메이션 개선이 필요합니다. 향후에는 사용자 경험을 향상시키기 위해 UI와 애니메이션을 보다 현대적이고 사용자 친화적인 방향으로 개선할 예정입니다.</li>
-                    </ul>
-                  </li> -->
                   </ul>
                 </div>
-                <button class="hs">자세히</button>
-              </div>
-            </div>
-          </div>
+              </aside>
 
-          <hr />
+              <section>
+                <article id="about-me">
+                  <div class="article-title">ABOUT ME</div>
+                  <div class="content">
+                    <p>
+                      안녕하십니까, 주니어 백엔드 개발자 이정원입니다.<br />
+                      <br />
 
-          <div class="project">
-            <div class="project-header">
-              <div class="title">
-                <i class="fas fa-user"></i>
-                <a href="https://github.com/jeongwon201/project-stmp"
-                  >축구 전술 관리 프로그램</a
-                >
-              </div>
-              <div class="subtitle">
-                선수를 등록하여 관리하고, 등록된 선수로 전술을 구상하여 관리할
-                수 있는 자바 프로그램
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="pb-left">
-                <div class="type">개인 프로젝트</div>
-                <div class="task">기획 및 개발</div>
-                <div class="period">2020.09. ~ 2020.12.</div>
-              </div>
-              <div class="pb-right">
-                <div class="simple">
-                  '축구 전술 관리 프로그램'은 축구 전술을 간편하게 구상하고
-                  관리하도록 구현된 프로그램입니다. Java 8 을 주 언어로
-                  개발되었으며 Java Swing Component 을 활용하여 GUI 를
-                  구성하였습니다. 사용자는 선수를 추가하고 추가된 선수로 전술을
-                  제작, 관리할 수 있으며, 이 외 사용자 인증 및 계정 관리, 선수
-                  관리 등의 기능을 구현하였습니다.
-                </div>
-                <div class="detail">
-                  <ul class="list">
-                    <li>
-                      <b>기술 스택</b>
-                      <ul>
-                        <li>주요 언어: Java 8</li>
-                        <li>데이터베이스: MariaDB, JDBC</li>
-                        <li>GUI 개발: Swing Component</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>기능과 특징</b>
-                      <ul>
-                        <li>
-                          사용자 인증 및 계정 관리: 사용자들은 자신의 계정을
-                          생성하고 로그인하여 프로그램을 사용할 수 있습니다.
-                        </li>
-                        <li>
-                          선수 관리: 사용자는 선수의 정보를 등록하고 관리할 수
-                          있습니다. 선수들의 이름, 포지션, 등의 정보를 입력하고
-                          수정할 수 있습니다.
-                        </li>
-                        <li>
-                          전술 관리: 사용자는 등록한 선수들로 전술을 구성할 수
-                          있습니다. 프로그램은 전술에 필요한 정보를 간편하게
-                          입력할 수 있도록 구성되어 있으며, 수정과 삭제를 할 수
-                          있습니다.
-                        </li>
-                        <li>
-                          프로그램은 사용자가 등록한 선수와 전체적인 전술을
-                          한눈에 볼 수 있도록 시각화되어 있습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>역할과 기여</b>
-                      <ul>
-                        <li>
-                          개인 프로젝트로 모든 부분에 기여하였으며, 모든 기능의
-                          설계와 개발을 진행하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>결과 및 성과</b>
-                      <ul>
-                        <li>
-                          프로젝트를 성공적으로 완료하였으며, 사용자들이
-                          효율적으로 선수와 전술을 관리할 수 있는 자바
-                          프로그램을 구현하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>어려웠던 점과 극복 방법</b>
-                      <ul>
-                        <li>
-                          개발에 사용된 Swing Component와 JDBC에 대해 충분히
-                          학습하고 진행한 프로젝트이기 때문에 특별히 어려웠던
-                          부분은 없었습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>배운 점과 성장</b>
-                      <ul>
-                        <li>
-                          자바를 활용하여 처음으로 개발한 프로그램으로써,
-                          프로그램의 전체적인 흐름을 파악할 수 있었습니다. 또한,
-                          데이터베이스와 인터페이스 구성에 대한 이해를 높일 수
-                          있었습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- <li>
-                    <b>개선점과 향후 계획</b>
-                    <ul>
-                      <li>데이터에 사용자 ID를 부여하여 개인 별로 데이터를 보유할 수 있도록 개선하고자 합니다.</li>
-                    </ul>
-                  </li> -->
-                  </ul>
-                </div>
-                <button class="hs">자세히</button>
-              </div>
-            </div>
-          </div>
+                      주로 자바와 스프링 프레임워크로 백엔드 개발을 하였습니다.<br />
+                      <br />
 
-          <hr />
+                      재학 중 다수의 팀 프로젝트에서 팀장을 담당하였습니다.<br />
+                      팀장으로서 리더십을 발휘하여 프로젝트를 주도하고 팀원들과 원활한 협업을 이끌어냈습니다.<br />
+                      <br />
 
-          <div class="project">
-            <div class="project-header">
-              <div class="title">
-                <i class="fas fa-users"></i>
-                <a href="https://github.com/jeongwon201/project-stmp"
-                  >무인 열 감지 카메라</a
-                >
-              </div>
-              <div class="subtitle">
-                코로나 팬데믹으로 방역에 투입되는 인원 축소를 위해 무인으로
-                코로나 의심 환자를 선별하는 기기
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="pb-left">
-                <div class="type">팀 프로젝트</div>
-                <div class="task">팀장, 기획 및 개발</div>
-                <div class="period">2020.09. ~ 2020.12.</div>
-              </div>
-              <div class="pb-right">
-                <div class="simple">
-                  '무인 열 감지 카메라'는 Arduino 를 기반으로 개발된 프로젝트로,
-                  코로나 의심 환자를 무인으로 선별하는 기기입니다. 초음파 센서와
-                  적외선 카메라를 이용하여 일정 거리에 위치한 사람의 얼굴 온도를
-                  측정합니다. 디스플레이를 활용하여 측정 결과에 따른 행동 양식
-                  문구를 출력하여 사용자에게 안내합니다.
-                </div>
-                <div class="detail">
-                  <ul class="list">
-                    <li>
-                      <b>개발 언어 및 기술</b>
-                      <ul>
-                        <li>개발 언어: Arduino</li>
-                        <li>
-                          사용 부품: AMG8833(적외선 카메라), HC-SR04(초음파
-                          센서), ILI9341 2.2” TFT LCD(디스플레이), NodeMCU
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>기능과 특징</b>
-                      <ul>
-                        <li>
-                          초음파 센서를 활용한 거리 측정: 정확한 발열 판단을
-                          위해 사람과 기기 간 거리를 측정합니다.
-                        </li>
-                        <li>
-                          적외선 카메라를 활용한 체온 측정: 환자의 체온을 적외선
-                          카메라로 측정하여 발열 여부를 판단합니다.
-                        </li>
-                        <li>
-                          디스플레이를 활용한 영상 송출 및 행동 양식 문구 출력:
-                          적외선 카메라로 측정한 영상과 체온 결과를 디스플레이에
-                          출력하고, 행동 양식 문구를 제시하여 사용자에게
-                          안내합니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>역할과 기여</b>
-                      <ul>
-                        <li>프로젝트 팀장을 담당하였습니다.</li>
-                        <li>
-                          프로젝트의 기획과 설계부터 구현까지 모든 부분에
-                          관여하여 프로젝트를 진행하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>결과와 성과</b>
-                      <ul>
-                        <li>
-                          거리 또는 측정된 체온에 따라 디스플레이에 행동 양식
-                          문구를 정확하게 출력합니다.
-                        </li>
-                        <li>
-                          주변 온도의 영향을 받는 부품 특성 상 약간의 오차
-                          범위가 있습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>어려웠던 점과 극복 방법</b>
-                      <ul>
-                        <li>
-                          발열 및 발열 의심 판단 기준 설정에 어려움이
-                          있었습니다. 이를 극복하기 위해 부위별 중요도를
-                          설정하여 체온 측정에 대한 판단 기준을 명확하게
-                          설정하였습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>배운 점과 성장</b>
-                      <ul>
-                        <li>
-                          이 프로젝트를 통해 개발이라는 의미를 다시 생각할 수
-                          있게 되었습니다. 코딩만이 아닌 개발 과정에서 경험한
-                          모든 문제와 시행 착오를 해결하고 원하는 결과를
-                          이끌어내는 것이 개발임을 깨닫게 되는 좋은 경험이
-                          되었습니다.
-                        </li>
-                        <li>
-                          또한, 팀 리더로써 프로젝트 관리와 팀원들과의 협업
-                          능력을 향상시킬 수 있었습니다.
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- <li>
-                    <b>개선점과 향후 계획</b>
-                    <ul>
-                      <li>주변 온도의 영향을 많이 받아 체온 측정이 정확하지 않다는 문제점이 있습니다.</li>
-                      <li>주변 온도를 측정하는 온도계와 머신 러닝을 활용하여 주변 온도에 따라 측정되는 체온의 데이터를 학습시켜 보다 정확한 발열 판단을 할 수 있도록 개선하고자 합니다. </li>
-                    </ul>
-                  </li> -->
-                  </ul>
-                </div>
-                <button class="hs">자세히</button>
-              </div>
-            </div>
-          </div>
-        </section>
+                      새로운 기술과 아키텍처를 학습하고 적용하여 프로세스를 개선하는 것에 큰 보람을 느낍니다.<br />
+                      IT 업계의 빠른 변화에 거부감 없이 매일 학습하고 성장하는 개발자로서, 전문성을 발휘할 준비가 되어있습니다.<br />
+                      <br />
 
-        <div class="section-title">SKILLS</div>
-        <section id="skills">
-          <div class="skills">
-            <div class="skills-title"><span>BACK-END</span></div>
+                      면접에 대비하여 기술적인 스킬과 프로젝트 경험에 대해 더 자세히 설명드릴 수 있습니다.<br />
+                      <br />
 
-            <div class="tab">
-              <button
-                class="tablinks backend java default-open"
-                onclick="openTab(event, 'java', 'backend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/java-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=black"
-                />
-              </button>
-              <button
-                class="tablinks backend spring"
-                onclick="openTab(event, 'spring', 'backend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/spring-FFFFFF?style=for-the-badge&logo=spring&logoColor=#6db33f"
-                />
-              </button>
-              <button
-                class="tablinks backend jpa"
-                onclick="openTab(event, 'jpa', 'backend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/jpa-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=black"
-                />
-              </button>
-              <button
-                class="tablinks backend mybatis"
-                onclick="openTab(event, 'mybatis', 'backend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/mybatis-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=black"
-                />
-              </button>
-              <button
-                class="tablinks backend jsp"
-                onclick="openTab(event, 'jsp', 'backend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/jsp-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=white"
-                />
-              </button>
-              <button
-                class="tablinks backend thymeleaf"
-                onclick="openTab(event, 'thymeleaf', 'backend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/thymeleaf-FFFFFF?style=for-the-badge&logo=thymeleaf&logoColor=005f0f"
-                />
-              </button>
-            </div>
+                      감사합니다.
+                    </p>
+                  </div>
+                </article>
 
-            <div id="java" class="tabcontent backend active">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    class="badge"
-                    src="https://img.shields.io/badge/java-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=black"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    Swing 컴포넌트를 이용하여 버튼, 레이블, 텍스트 필드 등의
-                    컴포넌트를 조합하여 UI 구성 및 기능 구현이 가능합니다.
-                  </li>
-                  <li>Collection Framework 의 활용이 가능합니다.</li>
-                  <li>
-                    Java 8 이상에서 Lambda Expression, Stream API 를 활용하여
-                    함수형 프로그래밍 작성이 가능합니다.
-                  </li>
-                  <li>
-                    Servlet 을 활용하여 Dynamic Web Application 구현이
-                    가능합니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="spring" class="tabcontent backend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/spring framework-FFFFFF?style=for-the-badge&logo=spring&logoColor=#6db33f"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    <span class="list-title">Spring Boot</span>
-                    <ul>
+                <article id="projects">
+                  <div class="article-title">PROJECTS</div>
+                  <div class="content">
+                    <ul class="list">
                       <li>
-                        구성(Configration), 의존성을 관리할 수 있으며, 개발 환경
-                        구성이 가능합니다.
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <span class="list-title">Spring Security</span>
-                    <ul>
-                      <li>
-                        Session 기반 인증 · 인가 프로세스를 구현이 가능합니다.
+                        <div class="title">포트폴리오 매칭<span class="date">2021.03. ~ 2021.12.</span></div>
+                        <div class="subtitle">사용자 간 포트폴리오를 거래하는 이커머스 웹 애플리케이션</div>
                       </li>
                       <li>
-                        JWT 와 결합하여 Token 기반 인증 · 인가 프로세스를 구현이
-                        가능합니다.
+                        <div class="title">추천 키워드 검색<span class="date">2021.09. ~ 2021.12.</span></div>
+                        <div class="subtitle">사용자에게 추천 키워드를 제공하는 상품 검색 웹 애플리케이션</div>
+                      </li>
+                      <li>
+                        <div class="title">축구 전술 시뮬레이터<span class="date">2021.03. ~ 2021.06.</span></div>
+                        <div class="subtitle">축구 전술 시뮬레이션을 제작하고 공유하는 웹 애플리케이션</div>
+                      </li>
+                      <li>
+                        <div class="title">축구 전술 관리 프로그램<span class="date">2020.09. ~ 2020.12.</span></div>
+                        <div class="subtitle">축구 전술을 간편하게 구상하고 관리하도록 구현된 프로그램</div>
+                      </li>
+                      <li>
+                        <div class="title">무인 열 감지 카메라<span class="date">2020.09. ~ 2020.12.</span></div>
+                        <div class="subtitle">코로나 의심 환자를 무인으로 선별하는 기기</div>
                       </li>
                     </ul>
-                  </li>
+                  </div>
+                </article>
 
-                  <li>
-                    <span class="list-title">Spring WebFlux</span>
-                    <ul>
-                      <li>
-                        Mono, Flux 를 반환하는 Functional Endpoints 와 Annotated
-                        Controllers 기반의 코드 작성 경험이 있습니다.
-                      </li>
-                    </ul>
-                  </li>
+                <article id="skills">
+                  <div class="article-title">SKILLS</div>
+                  <div class="content">
+                    <div class="skills">
+                      <div class="icons">
+                        <img src="http://is.am/5gsr" />
+                        <img src="https://img.shields.io/badge/python-FFFFFF?style=for-the-badge&logo=python&logoColor=3776AB" />
+                        <img src="https://img.shields.io/badge/c-FFFFFF?style=for-the-badge&logo=c&logoColor=#A8B9CC" />
+                        <img src="https://img.shields.io/badge/csharp-FFFFFF?style=for-the-badge&logo=csharp&logoColor=A8B9CC" />
+                      </div>
+                    </div>
+                    <div class="skills">
+                      <div class="icons">
+                        <img src="https://img.shields.io/badge/spring framework-FFFFFF?style=for-the-badge&logo=spring&logoColor=6db33f" />
+                        <img src="http://is.am/5gss" />
+                        <img src="http://is.am/5gst" />
+                        <img src="http://is.am/5gsu" />
+                        <img src="https://img.shields.io/badge/thymeleaf-FFFFFF?style=for-the-badge&logo=thymeleaf&logoColor=005f0f" />
+                      </div>
+                    </div>
 
-                  <li>
-                    <span class="list-title">Spring Cloud</span>
-                    <ul>
-                      <li>
-                        <span class="list-title">Spring Cloud Gateway</span>
-                        <ul>
+                    <div class="skills">
+                      <div class="icons">
+                        <img src="https://img.shields.io/badge/linux-FFFFFF?style=for-the-badge&logo=linux&logoColor=FCC624" />
+                        <img src="https://img.shields.io/badge/docker-FFFFFF?style=for-the-badge&logo=docker&logoColor=2496ED" />
+                        <img src="https://img.shields.io/badge/kafka-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=59676A" />
+                        <img src="https://img.shields.io/badge/amazonaws-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=232F3E" />
+                      </div>
+                    </div>
+
+                    <div class="skills">
+                      <div class="icons">
+                        <img src="https://img.shields.io/badge/html5-FFFFFF?style=for-the-badge&logo=html5&logoColor=E34F26" />
+                        <img src="https://img.shields.io/badge/css3-FFFFFF?style=for-the-badge&logo=css3&logoColor=1572B6" />
+                        <img src="https://img.shields.io/badge/bootstrap-FFFFFF?style=for-the-badge&logo=bootstrap&logoColor=7952B3" />
+                        <img src="https://img.shields.io/badge/javascript-FFFFFF?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+                        <img src="https://img.shields.io/badge/react-FFFFFF?style=for-the-badge&logo=react&logoColor=61DAFB" />
+                      </div>
+                    </div>
+
+                    <div class="skills">
+                      <div class="icons">
+                        <img src="https://img.shields.io/badge/mysql-FFFFFF?style=for-the-badge&logo=mysql&logoColor=4479A1" />
+                        <img src="https://img.shields.io/badge/mariadb-FFFFFF?style=for-the-badge&logo=mariadb&logoColor=003545" />
+                        <img src="https://img.shields.io/badge/oracle-FFFFFF?style=for-the-badge&logo=oracle&logoColor=F80000" />
+                        <img src="https://img.shields.io/badge/mongodb-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=47A248" />
+                      </div>
+                    </div>
+
+                    <div class="skills">
+                      <div class="icons">
+                        <img src="https://img.shields.io/badge/git-FFFFFF?style=for-the-badge&logo=git&logoColor=F05032" />
+                        <img src="https://img.shields.io/badge/github-FFFFFF?style=for-the-badge&logo=github&logoColor=181717" />
+                        <img src="https://img.shields.io/badge/arduino-FFFFFF?style=for-the-badge&logo=arduino&logoColor=00979D" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+              <footer>-1-</footer>
+            </container>
+          </li>
+          <li id="2" class="card">
+            <container id="second-page">
+              <header>
+                <div class="content">
+                  <div class="title">PROJECTS</div>
+                </div>
+              </header>
+              <aside></aside>
+              <section>
+                <article>
+                  <div class="content">
+                    <div class="left-side">
+                      <div class="title"><a href="https://github.com/jeongwon201/project-pm" target="_blank">포트폴리오 매칭</a></div>
+                      <div class="size">팀 프로젝트</div>
+                      <div class="role">기획 및 개발</div>
+                      <div class="date">2021.03. ~ 2021.12.</div>
+                    </div>
+                    <div class="right-side">
+                      <div class="simple">
+                        <p>
+                          '포트폴리오 매칭'은 사용자 간 포트폴리오를 거래하는 이커머스 웹 애플리케이션입니다.<br />
+                          Java 8, Spring Framework, JSP, Mabatis 3 등을 활용하여 개발하였습니다.<br />
+                          팀 프로젝트로 팀원 간 의견 조율 및 역할 분배를 담당하였습니다.<br />
+                          주요 기능 중 '마이페이지 서비스', '관리자 서비스 中 포트폴리오 관리' 등의 기능 구현을 담당하였습니다.
+                        </p>
+                      </div>
+                      <div class="detail note-wrap">
+                        <button class="close">x</button>
+                        <div class="title">포트폴리오 매칭</div>
+                        <ul class="list">
+                          <li><a href="https://github.com/jeongwon201/project-pm" target="_blank">GITHUB REPOSITORY 바로가기</a></li>
                           <li>
-                            Gateway 를 구성하여 여러 서비스로 라우팅한 경험이
-                            있습니다.
+                            <b>기술 스택</b>
+                            <ul>
+                              <li>주요 언어: Java 8</li>
+                              <li>웹 프레임워크: Spring Framework 5.0.7</li>
+                              <li>프론트 엔드: HTML, CSS, Bootstrap, JavaScript, JQuery</li>
+                              <li>뷰 템플릿 엔진: JSP, JSTL</li>
+                              <li>데이터베이스: MariaDB, MyBatis 3</li>
+                              <li>기타: 카카오 결제 API</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>기능과 특징</b>
+                            <ul>
+                              <li>사용자 인증 및 계정 관리: 사용자 로그인 및 회원가입을 처리하는 기능으로, 사용자 계정 관리를 담당합니다.</li>
+                              <li>포트폴리오 등록: 사용자들은 자신의 포트폴리오를 등록할 수 있습니다.</li>
+                              <li>포트폴리오 거래: 사용자들은 등록된 포트폴리오를 거래할 수 있으며, 거래 관련 기능을 제공합니다.</li>
+                              <li>
+                                카테고리 별 포트폴리오 목록 및 검색: 사용자들은 카테고리별로 포트폴리오를 검색하고, 관련 목록을 확인할 수 있습니다.
+                              </li>
+                              <li>마이페이지 서비스: 구매 및 판매 관리, 내 정보 관리, 리뷰 관리, 문의 관리 등의 기능을 제공합니다.</li>
+                              <li>관리자 서비스: 사이트 관리자가 수행할 수 있는 기능을 제공합니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>역할과 기여</b>
+                            <ul>
+                              <li>팀원 간 의견 조율과 역할 배분을 담당했습니다.</li>
+                              <li>
+                                마이페이지 서비스, 관리자 서비스에서 포트폴리오 관리 서비스, 트랜드 포트폴리오 상위 노출, 포트폴리오 검색, 카테고리
+                                UI를 구현하였습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>결과 및 성과</b>
+                            <ul>
+                              <li>프로젝트는 사용자들이 포트폴리오를 등록 및 관리하고 거래하는 기능을 모두 구현하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>어려웠던 점과 극복 방법</b>
+                            <ul>
+                              <li>결제 API에 대한 지식이 없는 상태에서 마이페이지 서비스 중 결제와 연관된 기능을 구현하는 것이 어려웠습니다.</li>
+                              <li>팀원들과의 커뮤니케이션을 통해 필요한 지식을 습득하고, 추가적으로 스터디를 진행하여 해결하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>배운 점과 성장</b>
+                            <ul>
+                              <li>프로젝트를 통해 REST API를 이용한 외부 API 활용에 대한 지식을 얻을 수 있었습니다.</li>
+                              <li>
+                                실제 운영 환경을 위해 고려해야 할 사항들에 대해 깊이 이해하게 되었으며, 보다 정교한 설계와 개발에 대한 경험을 쌓을 수
+                                있었습니다.
+                              </li>
+                            </ul>
                           </li>
                         </ul>
-                      </li>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-                      <li>
-                        <span class="list-title">Spring Cloud Config</span>
-                        <ul>
+                <article>
+                  <div class="content">
+                    <div class="left-side">
+                      <div class="title">
+                        <a href="https://github.com/jeongwon201/project-search" target="_blank">추천 키워드 검색</a>
+                      </div>
+                      <div class="size">개인 프로젝트</div>
+                      <div class="role">기획 및 개발</div>
+                      <div class="date">2021.09. ~ 2021.12.</div>
+                    </div>
+                    <div class="right-side">
+                      <div class="simple">
+                        <p>
+                          '추천 키워드 검색'은 사용자에게 추천 키워드를 제공하는 상품 검색 웹 애플리케이션입니다.<br />
+                          Java 8, Spring Boot, Thymeleaf, JPA, Python 3 등을 활용하여 개발하였습니다.<br />
+                          주요 기능은 '추천 알고리즘' 으로 TF-IDF 기반의 코사인 유사도를 활용하여 구현하였습니다.<br />
+                          JEP(Java Embedded Python) 라이브러리를 활용하여 Java 와 Python 을 결합하였습니다.
+                        </p>
+                      </div>
+                      <div class="detail note-wrap">
+                        <button class="close">x</button>
+                        <div class="title">추천 키워드 검색</div>
+                        <ul class="list">
+                          <li><a href="https://github.com/jeongwon201/project-search" target="_blank">GITHUB REPOSITORY 바로가기</a></li>
                           <li>
-                            Configration Server · Client 를 구성하여 구성 정보를
-                            외부 Repository 로 분리하여 관리한 경험이 있습니다.
+                            <b>기술 스택</b>
+                            <ul>
+                              <li>주요 언어: Java 8, Python 3</li>
+                              <li>프레임워크: Spring Boot 2.5.4.</li>
+                              <li>프론트 엔드: HTML, CSS, JavaScript, Jquery</li>
+                              <li>뷰 템플릿 엔진: ThymeLeaf</li>
+                              <li>데이터베이스: MySQL, JPA</li>
+                              <li>머신 러닝 라이브러리: Pandas, scikit-learn</li>
+                              <li>기타: Lombok, Gradle, JEP, 네이버 쇼핑 검색 API</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>기능과 특징</b>
+                            <ul>
+                              <li>네이버 쇼핑 검색 API를 활용한 상품 검색 기능: 사용자가 원하는 상품을 검색할 수 있습니다.</li>
+                              <li>TF-IDF 기반의 코사인 유사도를 활용한 키워드 추천 알고리즘: 사용자의 검색어와 관련하여 추천 검색어를 제공합니다.</li>
+                              <li>
+                                프로젝트에서는 머신 러닝 기술인 TF-IDF 기반의 코사인 유사도를 활용하여 검색어와 관련된 추천 검색어를 제공합니다. 이를
+                                통해 사용자들에게 더욱 정확하고 유용한 검색어를 제공하는 특징을 갖고 있습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>역할과 기여</b>
+                            <ul>
+                              <li>개인 프로젝트로 모든 부분에 기여하였으며, 모든 기능의 설계와 개발을 진행하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>결과 및 성과</b>
+                            <ul>
+                              <li>상품 검색 기능과 추천 검색어 기능을 모두 구현하였습니다.</li>
+                              <li>
+                                사용자들은 원하는 상품을 빠르게 검색하고, 추천 검색어를 통해 더욱 다양한 상품을 발견할 수 있어 검색 경험이
+                                향상되었습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>어려웠던 점과 극복 방법</b>
+                            <ul>
+                              <li>JVM 특성 상 Java와 Python을 같이 실행하는 것에 어려움이 많았습니다.</li>
+                              <li>Java Embedded Python 라이브러리를 활용하여 JVM 위에서 Python을 사용하여 문제를 해결하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>배운 점과 성장</b>
+                            <ul>
+                              <li>
+                                프로젝트를 통해 JVM 환경에서 Python 사용을 가능하게하는 기술을 학습하였습니다. 이를 통해 다양한 언어를 융합하여 더욱
+                                다양하고 유연한 개발이 가능해졌습니다.
+                              </li>
+                            </ul>
                           </li>
                         </ul>
-                      </li>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-                      <li>
-                        <span class="list-title">Spring Cloud Bus</span>
-                        <ul>
+                <article>
+                  <div class="content">
+                    <div class="left-side">
+                      <div class="title">
+                        <a href="https://github.com/jeongwon201/project-tactics" target="_blank">축구 전술 시뮬레이터</a>
+                      </div>
+                      <div class="size">개인 프로젝트</div>
+                      <div class="role">기획 및 개발</div>
+                      <div class="date">2021.03. ~ 2021.06.</div>
+                    </div>
+                    <div class="right-side">
+                      <div class="simple">
+                        <p>
+                          '축구 전술 시뮬레이터'는 축구 전술 시뮬레이션을 제작하고 공유하는 웹 애플리케이션입니다.<br />
+                          Java 8, Spring Framework, JSP, MyBatis 3 등을 활용하여 개발하였습니다.<br />
+                          주요 기능은 '시뮬레이션' 으로 Javascript 를 활용하여 구현하였습니다.<br />
+                          이 외 사용자 인증 및 계정 관리, 커뮤니티 게시판을 구현하였습니다.
+                        </p>
+                      </div>
+                      <div class="detail note-wrap">
+                        <button class="close">x</button>
+                        <div class="title">축구 전술 시뮬레이터</div>
+                        <ul class="list">
+                          <li><a href="https://github.com/jeongwon201/project-tactics" target="_blank">GITHUB REPOSITORY 바로가기</a></li>
                           <li>
-                            Spring Cloud Config 와 연계하여 Cloud 환경에서 1개의
-                            서비스 구성 정보 변경 시 변경 사항이 있는 나머지
-                            서비스 구성 정보도 동적으로 변경되도록 기능을 구현한
-                            경험이 있습니다.
+                            <b>기술 스택</b>
+                            <ul>
+                              <li>주요 언어: Java 8</li>
+                              <li>프레임워크: Spring Framework 5.0.7</li>
+                              <li>프론트 엔드: HTML, CSS, JavaScript, JQuery</li>
+                              <li>뷰 템플릿 엔진: JSP</li>
+                              <li>데이터베이스: Oracle, MyBatis 3</li>
+                              <li>기타: Maven</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>기능과 특징</b>
+                            <ul>
+                              <li>사용자 인증 및 계정 관리: 사용자는 회원 가입을 통해 계정을 생성하고 로그인하여 서비스를 이용할 수 있습니다.</li>
+                              <li>전술 관리: 사용자는 자신이 만든 축구 전술 시뮬레이션을 등록하고 관리할 수 있습니다.</li>
+                              <li>전술 토론 게시판: 사용자들은 각자의 전술에 대해 토론하고 의견을 나눌 수 있는 게시판을 이용할 수 있습니다.</li>
+                              <li>시뮬레이션: 제작한 시뮬레이션을 재생하여 생생한 움직임을 시각적으로 확인할 수 있습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>역할과 기여</b>
+                            <ul>
+                              <li>개인 프로젝트로 모든 부분에 기여하였으며, 모든 기능의 설계와 개발을 진행하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>결과 및 성과</b>
+                            <ul>
+                              <li>사용자는 로그인 및 사용자 정보 관리가 가능합니다.</li>
+                              <li>사용자는 전술 시뮬레이션을 제작하고 관리할 수 있으며, 제작한 시뮬레이션은 게시판을 통해 공유가 가능합니다.</li>
+                              <li>댓글 기능을 통해 전술에 대한 커뮤니케이션이 이루어집니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>어려웠던 점과 극복 방법</b>
+                            <ul>
+                              <li>복잡한 시뮬레이션 데이터의 표현에 어려움을 겪었습니다.</li>
+                              <li>
+                                다양한 방식으로 데이터를 표현할 수 있음을 학습하고, JSON 형식과 파일 시스템을 활용하여 복잡한 데이터를 효율적으로 다룰
+                                수 있도록 해결하였습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>배운 점과 성장</b>
+                            <ul>
+                              <li>
+                                프로젝트를 통해 RDBMS에 국한되지 않는 많은 데이터 표현 방식에 대해 학습할 수 있었습니다. 이를 통해 데이터의 다양한
+                                형태를 처리하는 능력이 향상되었습니다.
+                              </li>
+                            </ul>
                           </li>
                         </ul>
-                      </li>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-                      <li>
-                        <span class="list-title">Spring Cloud Eureka</span>
-                        <ul>
+                <article>
+                  <div class="content">
+                    <div class="left-side">
+                      <div class="title">
+                        <a href="https://github.com/jeongwon201/project-stmp" target="_blank">축구 전술 관리 프로그램</a>
+                      </div>
+                      <div class="size">개인 프로젝트</div>
+                      <div class="role">기획 및 개발</div>
+                      <div class="date">2020.09. ~ 2020.12.</div>
+                    </div>
+                    <div class="right-side">
+                      <div class="simple">
+                        <p>
+                          '축구 전술 관리 프로그램'은 축구 전술을 간편하게 구상하고 관리하도록 구현된 프로그램입니다.<br />
+                          Java 8, Java Swing Component, JDBC, MariaDB 를 활용하여 개발하였습니다.<br />
+                          주요 기능은 '전술 관리', '선수 관리' 로 전술 및 선수 데이터의 저장, 수정, 삭제 기능을 구현하였습니다.<br />
+                          Swing Component 를 활용하여 GUI 를 구성하였으며, JDBC 를 활용하여 데이터베이스와 연동하였습니다.<br />
+                        </p>
+                      </div>
+                      <div class="detail note-wrap">
+                        <button class="close">x</button>
+                        <div class="title">축구 전술 관리 프로그램</div>
+                        <ul class="list">
+                          <li><a href="https://github.com/jeongwon201/project-stmp" target="_blank">GITHUB REPOSITORY 바로가기</a></li>
                           <li>
-                            Eureka Server · Client 를 구성하고 Spring Cloud
-                            Gateway 연계하여 Service Discovery 를 구현한 경험이
-                            있습니다.
+                            <b>기술 스택</b>
+                            <ul>
+                              <li>주요 언어: Java 8</li>
+                              <li>데이터베이스: MariaDB, JDBC</li>
+                              <li>GUI 개발: Swing Component</li>
+                            </ul>
                           </li>
                           <li>
-                            부하 방지를 위해 Eureka Server 를 이중화한 경험이
-                            있습니다.
+                            <b>기능과 특징</b>
+                            <ul>
+                              <li>사용자 인증 및 계정 관리: 사용자들은 자신의 계정을 생성하고 로그인하여 프로그램을 사용할 수 있습니다.</li>
+                              <li>
+                                선수 관리: 사용자는 선수의 정보를 등록하고 관리할 수 있습니다. 선수들의 이름, 포지션, 등의 정보를 입력하고 수정할 수
+                                있습니다.
+                              </li>
+                              <li>
+                                전술 관리: 사용자는 등록한 선수들로 전술을 구성할 수 있습니다. 프로그램은 전술에 필요한 정보를 간편하게 입력할 수
+                                있도록 구성되어 있으며, 수정과 삭제를 할 수 있습니다.
+                              </li>
+                              <li>프로그램은 사용자가 등록한 선수와 전체적인 전술을 한눈에 볼 수 있도록 시각화되어 있습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>역할과 기여</b>
+                            <ul>
+                              <li>개인 프로젝트로 모든 부분에 기여하였으며, 모든 기능의 설계와 개발을 진행하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>결과 및 성과</b>
+                            <ul>
+                              <li>
+                                프로젝트를 성공적으로 완료하였으며, 사용자들이 효율적으로 선수와 전술을 관리할 수 있는 자바 프로그램을 구현하였습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>어려웠던 점과 극복 방법</b>
+                            <ul>
+                              <li>
+                                개발에 사용된 Swing Component와 JDBC에 대해 충분히 학습하고 진행한 프로젝트이기 때문에 특별히 어려웠던 부분은
+                                없었습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>배운 점과 성장</b>
+                            <ul>
+                              <li>
+                                자바를 활용하여 처음으로 개발한 프로그램으로써, 프로그램의 전체적인 흐름을 파악할 수 있었습니다. 또한, 데이터베이스와
+                                인터페이스 구성에 대한 이해를 높일 수 있었습니다.
+                              </li>
+                            </ul>
                           </li>
                         </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-            <div id="jpa" class="tabcontent backend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/jpa-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=black"
-                  />
+                <article>
+                  <div class="content">
+                    <div class="left-side">
+                      <div class="title">
+                        <a href="https://github.com/jeongwon201/project-utc" target="_blank">무인 열 감지 카메라</a>
+                      </div>
+                      <div class="size">팀 프로젝트</div>
+                      <div class="role">팀장, 기획 및 개발</div>
+                      <div class="date">2020.09. ~ 2020.12.</div>
+                    </div>
+                    <div class="right-side">
+                      <div class="simple">
+                        <p>
+                          '무인 열 감지 카메라'는 코로나 의심 환자를 무인으로 선별하는 기기입니다.<br />
+                          Arduino 를 기반으로 초음파 센서, 적외선 카메라, 2.2 LCD 디스플레이를 활용하여 개발하였습니다.<br />
+                          팀 프로젝트로 팀장을 담당하였으며, 개발의 모든 과정에 성실히 참여하였습니다.<br />
+                          주요 기능은 '발열 판단 알고리즘'으로 테스트를 통한 데이터를 기반으로 알고리즘을 구성하였습니다.<br />
+                        </p>
+                      </div>
+                      <div class="detail note-wrap">
+                        <button class="close">x</button>
+                        <div class="title">무인 열 감지 카메라</div>
+                        <ul class="list">
+                          <li><a href="https://github.com/jeongwon201/project-utc" target="_blank">GITHUB REPOSITORY 바로가기</a></li>
+                          <li>
+                            <b>개발 언어 및 기술</b>
+                            <ul>
+                              <li>개발 언어: Arduino</li>
+                              <li>사용 부품: AMG8833(적외선 카메라), HC-SR04(초음파 센서), ILI9341 2.2” TFT LCD(디스플레이), NodeMCU</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>기능과 특징</b>
+                            <ul>
+                              <li>초음파 센서를 활용한 거리 측정: 정확한 발열 판단을 위해 사람과 기기 간 거리를 측정합니다.</li>
+                              <li>적외선 카메라를 활용한 체온 측정: 환자의 체온을 적외선 카메라로 측정하여 발열 여부를 판단합니다.</li>
+                              <li>
+                                디스플레이를 활용한 영상 송출 및 행동 양식 문구 출력: 적외선 카메라로 측정한 영상과 체온 결과를 디스플레이에 출력하고,
+                                행동 양식 문구를 제시하여 사용자에게 안내합니다.
+                              </li>
+                              <li>
+                                발열 판단 알고리즘: 간호사 지인의 조언을 바탕으로 얼굴 부위 별 중요도를 설정하여 점수를 합산하는 방식으로 발열을
+                                판단합니다. 알고리즘에 의해 발열 의심 또는 발열로 판단될 경우 손목의 온도를 재측정하여 정확도를 높혔습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>역할과 기여</b>
+                            <ul>
+                              <li>프로젝트 팀장을 담당하였습니다.</li>
+                              <li>프로젝트의 기획과 설계부터 구현까지 모든 부분에 관여하여 프로젝트를 진행하였습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>결과와 성과</b>
+                            <ul>
+                              <li>거리 또는 측정된 체온에 따라 디스플레이에 행동 양식 문구를 정확하게 출력합니다.</li>
+                              <li>주변 온도의 영향을 받는 부품 특성 상 약간의 오차 범위가 있습니다.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>어려웠던 점과 극복 방법</b>
+                            <ul>
+                              <li>
+                                발열 및 발열 의심 판단 기준 설정에 어려움이 있었습니다. 이를 극복하기 위해 부위별 중요도를 설정하여 체온 측정에 대한
+                                판단 기준을 명확하게 설정하였습니다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>배운 점과 성장</b>
+                            <ul>
+                              <li>
+                                이 프로젝트를 통해 개발이라는 의미를 다시 생각할 수 있게 되었습니다. 코딩만이 아닌 개발 과정에서 경험한 모든 문제와
+                                시행 착오를 해결하고 원하는 결과를 이끌어내는 것이 개발임을 깨닫게 되는 좋은 경험이 되었습니다.
+                              </li>
+                              <li>또한, 팀 리더로써 프로젝트 관리와 팀원들과의 협업 능력을 향상시킬 수 있었습니다.</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+              <footer>-2-</footer>
+            </container>
+          </li>
+          <li id="3" class="card">
+            <container id="third-page">
+              <header>
+                <div class="content">
+                  <div class="title">SKILLS</div>
                 </div>
-                <ul class="list">
-                  <li>RDBMS 의 데이터를 Java 객체로 표현할 수 있습니다.</li>
-                  <li>
-                    N+1 문제에 대해 Fetch join 을 사용하여 해결이 가능합니다.
-                  </li>
-                  <li>Criteia API, Specification 활용이 가능합니다.</li>
-                </ul>
-              </div>
-            </div>
+              </header>
+              <section>
+                <article>
+                  <div class="skills">
+                    <div class="header">
+                      <div class="title">LANGUAGE</div>
+                    </div>
+                    <div class="content">
+                      <div class="skill">
+                        <div class="icon"><img src="http://is.am/5gsr" /></div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>Swing 컴포넌트를 이용하여 버튼, 레이블, 텍스트 필드 등의 컴포넌트를 조합하여 UI 구성 및 기능 구현이 가능합니다.</li>
+                            <li>Collection Framework 의 활용이 가능합니다.</li>
+                            <li>Java 8 이상에서 Lambda Expression, Stream API 를 활용하여 함수형 프로그래밍 작성이 가능합니다.</li>
+                            <li>Servlet 을 활용하여 Dynamic Web Application 구현이 가능합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/python-FFFFFF?style=for-the-badge&logo=python&logoColor=3776AB" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>머신러닝을 구현하기 위해 사용한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon"><img src="https://img.shields.io/badge/c-FFFFFF?style=for-the-badge&logo=c&logoColor=A8B9CC" /></div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>기본 개념에 대한 이해와 구조체, 포인터 활용이 가능합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/csharp-FFFFFF?style=for-the-badge&logo=csharp&logoColor=A8B9CC" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>재학 중 도서 관리 프로그램을 구현한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div id="mybatis" class="tabcontent backend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/mybatis-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=black"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    XML 을 사용하여 SQL 문으로 Java 객체와 매핑이 가능합니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
+                  <div class="skills">
+                    <div class="header">
+                      <div class="title">BACKEND</div>
+                    </div>
+                    <div class="content">
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/spring-FFFFFF?style=for-the-badge&logo=spring&logoColor=#6db33f" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>
+                              <span class="list-title">Spring Boot</span>
+                              <ul>
+                                <li>구성(Configration), 의존성을 관리할 수 있으며, 개발 환경 구성이 가능합니다.</li>
+                              </ul>
+                            </li>
 
-            <div id="jsp" class="tabcontent backend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/jsp-FFFFFF?style=for-the-badge&logo=data:image/png;base64,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&logoColor=white"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    JSP 코드 내부에서 Scriptlet, JSTL, EL 사용이 가능합니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
+                            <li>
+                              <span class="list-title">Spring Security</span>
+                              <ul>
+                                <li>Session 기반 인증 · 인가 프로세스를 구현이 가능합니다.</li>
+                                <li>JWT 와 결합하여 Token 기반 인증 · 인가 프로세스를 구현이 가능합니다.</li>
+                              </ul>
+                            </li>
 
-            <div id="thymeleaf" class="tabcontent backend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/thymeleaf-FFFFFF?style=for-the-badge&logo=thymeleaf&logoColor=005f0f"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    ThymeLeaf Layout Dialect 를 활용하여 페이지 레이아웃을
-                    Fragment 단위로 나누어 중복되는 코드를 줄이고 Fragment 를
-                    조합하여 페이지를 구성하는 방식으로 개발의 편의성을 높힌
-                    경험이 있습니다.
-                  </li>
-                  <li>
-                    Spring Security 로 구현된 Session 기반 인증 프로세스와
-                    연계하여 역할에 따른 접근 제한 기능을 구현한 경험이
-                    있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+                            <li>
+                              <span class="list-title">Spring WebFlux</span>
+                              <ul>
+                                <li>Mono, Flux 를 반환하는 Functional Endpoints 와 Annotated Controllers 기반의 코드 작성 경험이 있습니다.</li>
+                              </ul>
+                            </li>
 
-          <hr class="skills-hr" />
+                            <li>
+                              <span class="list-title">Spring Cloud</span>
+                              <ul>
+                                <li>
+                                  <span class="list-title">Spring Cloud Gateway</span>
+                                  <ul>
+                                    <li>Gateway 를 구성하여 여러 서비스로 라우팅한 경험이 있습니다.</li>
+                                  </ul>
+                                </li>
 
-          <div class="skills">
-            <div class="skills-title">DEVOPS / INFRA</div>
+                                <li>
+                                  <span class="list-title">Spring Cloud Config</span>
+                                  <ul>
+                                    <li>Configration Server · Client 를 구성하여 구성 정보를 외부 Repository 로 분리하여 관리한 경험이 있습니다.</li>
+                                  </ul>
+                                </li>
 
-            <div class="tab">
-              <button
-                class="tablinks devops linux default-open"
-                onclick="openTab(event, 'linux', 'devops')"
-              >
-                <img
-                  src="https://img.shields.io/badge/linux-FFFFFF?style=for-the-badge&logo=linux&logoColor=FCC624"
-                />
-              </button>
-              <button
-                class="tablinks devops docker"
-                onclick="openTab(event, 'docker', 'devops')"
-              >
-                <img
-                  src="https://img.shields.io/badge/docker-FFFFFF?style=for-the-badge&logo=docker&logoColor=2496ED"
-                />
-              </button>
-              <button
-                class="tablinks devops kafka"
-                onclick="openTab(event, 'kafka', 'devops')"
-              >
-                <img
-                  src="https://img.shields.io/badge/kafka-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=59676A"
-                />
-              </button>
-              <button
-                class="tablinks devops aws"
-                onclick="openTab(event, 'aws', 'devops')"
-              >
-                <img
-                  src="https://img.shields.io/badge/amazonaws-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=232F3E"
-                />
-              </button>
-            </div>
+                                <li>
+                                  <span class="list-title">Spring Cloud Bus</span>
+                                  <ul>
+                                    <li>
+                                      Spring Cloud Config 와 연계하여 Cloud 환경에서 1개의 서비스 구성 정보 변경 시 변경 사항이 있는 나머지 서비스
+                                      구성 정보도 동적으로 변경되도록 기능을 구현한 경험이 있습니다.
+                                    </li>
+                                  </ul>
+                                </li>
 
-            <div id="linux" class="tabcontent devops">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/linux-FFFFFF?style=for-the-badge&logo=linux&logoColor=FCC624"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    Virtual Machine 에 CentOS 7 를 설치하여 여러 프로젝트에서
-                    활용한 경험 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
+                                <li>
+                                  <span class="list-title">Spring Cloud Eureka</span>
+                                  <ul>
+                                    <li>
+                                      Eureka Server · Client 를 구성하고 Spring Cloud Gateway 연계하여 Service Discovery 를 구현한 경험이 있습니다.
+                                    </li>
+                                    <li>부하 방지를 위해 Eureka Server 를 이중화한 경험이 있습니다.</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
 
-            <div id="docker" class="tabcontent devops">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/docker-FFFFFF?style=for-the-badge&logo=docker&logoColor=2496ED"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    Dockerfile 을 작성하여 Docker Image 를 생성한 경험이
-                    있습니다.
-                  </li>
-                  <li>
-                    생성된 Image 를 Container 위에 실행하여 개인 프로젝트를
-                    배포한 경험이 있습니다.
-                  </li>
-                  <li>
-                    Docker Compose 를 사용하여 Nginx WAS 를 RR 로드밸런싱으로
-                    이중화하여 배포한 경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
+                      <div class="skill">
+                        <div class="icon"><img src="http://is.am/5gss" /></div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>RDBMS 의 데이터를 Java 객체로 표현할 수 있습니다.</li>
+                            <li>N+1 문제에 대해 Fetch join 을 사용하여 해결이 가능합니다.</li>
+                            <li>Criteia API, Specification 활용이 가능합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon"><img src="http://is.am/5gst" /></div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>MyBatis 를 통해 데이터베이스와 연동이 가능하며, 여러 프로젝트에서 사용 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon"><img src="http://is.am/5gsu" /></div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>Scriptlet, JSTL, EL 사용이 가능하며, 여러 프로젝트에서 사용 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/thymeleaf-FFFFFF?style=for-the-badge&logo=thymeleaf&logoColor=005f0f" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>
+                              ThymeLeaf Layout Dialect 를 활용하여 페이지 레이아웃을 Fragment 단위로 나누어 중복되는 코드를 줄이고 Fragment 를
+                              조합하여 페이지를 구성하는 방식으로 개발의 편의성을 높힌 경험이 있습니다.
+                            </li>
+                            <li>
+                              Spring Security 로 구현된 Session 기반 인증 프로세스와 연계하여 역할에 따른 접근 제한 기능을 구현한 경험이 있습니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-            <div id="kafka" class="tabcontent devops">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/kafka-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=59676A"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    주키퍼 서버와 브로커 서버를 각 2 대로 하여 주키퍼 앙상블,
-                    카프카 클러스터를 구성한 경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
+                <article>
+                  <div class="skills">
+                    <div class="header">
+                      <div class="title">DEVOPS</div>
+                    </div>
+                    <div class="content">
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/linux-FFFFFF?style=for-the-badge&logo=linux&logoColor=FCC624" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>Virtual Machine 에 CentOS 7 를 설치하여 여러 프로젝트에서 활용한 경험 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/docker-FFFFFF?style=for-the-badge&logo=docker&logoColor=2496ED" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>Dockerfile 을 작성하여 Docker Image 를 생성한 경험이 있습니다.</li>
+                            <li>생성된 Image 를 Container 위에 실행하여 개인 프로젝트를 배포한 경험이 있습니다.</li>
+                            <li>Docker Compose 를 사용하여 Nginx WAS 를 RR 방식의 로드밸런싱으로 이중화하여 배포한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/kafka-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=59676A" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>주키퍼 서버와 브로커 서버를 각 2 대로 하여 주키퍼 앙상블, 카프카 클러스터를 구성한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/amazonaws-FFFFFF?style=for-the-badge&logo=amazonaws&logoColor=232F3E" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>EC2 인스턴스를 생성하여 웹 애플리케이션을 배포한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div id="aws" class="tabcontent devops">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/amazonaws-FFFFFF?style=for-the-badge&logo=apachekafka&logoColor=232F3E"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    EC2 인스턴스를 생성하여 웹 애플리케이션을 배포한 경험이
-                    있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+                  <div class="skills">
+                    <div class="header">
+                      <div class="title">FRONTEND</div>
+                    </div>
+                    <div class="content">
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/html5-FFFFFF?style=for-the-badge&logo=html5&logoColor=E34F26" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>웹 페이지 구조와 콘텐츠를 작성이 가능하며, 많은 웹 애플리케이션 프로젝트에서 사용 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/css3-FFFFFF?style=for-the-badge&logo=css3&logoColor=1572B6" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>디자인 및 레이아웃을 다루는 데에 경험이 있으며, 웹 페이지의 시각적인 요소를 개선할 수 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/bootstrap-FFFFFF?style=for-the-badge&logo=bootstrap&logoColor=7952B3" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>여러 템플릿을 조합하여 반응형 웹 페이지를 개발한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/javascript-FFFFFF?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>ES5, ES6 표준 스타일 코드 작성이 가능합니다.</li>
+                            <li>DOM 노드를 조작하거나 CSS Animation 을 통한 디자인 및 애니메이션 적용이 가능합니다.</li>
+                            <li>promise, async/await 비동기 처리를 구현한 경험이 있습니다.</li>
+                            <li>JQuery 를 통해 DOM 노드 조작, Ajax 비동기 통신 구현이 가능합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/react-FFFFFF?style=for-the-badge&logo=react&logoColor=61DAFB" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>
+                              React Hook 의 State Hook 을 사용하여 State 를 조작하고, Effect Hook 을 통해 렌더링 전 · 후 동작을 설정한 경험이
+                              있습니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-          <hr class="skills-hr" />
+                  <div class="skills">
+                    <div class="header">
+                      <div class="title">DATABASE</div>
+                    </div>
+                    <div class="content">
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/mysql-FFFFFF?style=for-the-badge&logo=mysql&logoColor=4479A1" />
+                          <img src="https://img.shields.io/badge/mariadb-FFFFFF?style=for-the-badge&logo=mariadb&logoColor=003545" />
+                          <img src="https://img.shields.io/badge/oracle-FFFFFF?style=for-the-badge&logo=oracle&logoColor=F80000" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>CRUD 쿼리를 작성할 수 있습니다.</li>
+                            <li>효율적인 쿼리를 위해 인덱스 활용이 가능합니다.</li>
+                            <li>복잡한 데이터 검색이 필요한 경우 서브 쿼리를 사용하여 효율적인 데이터 추출을 수행할 수 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
 
-          <div class="skills">
-            <div class="skills-title">FRONT-END</div>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/mongodb-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=47A248" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>Reactive Web Application 의 Reactive Database 로 활용한 경험이 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="tab">
-              <button
-                class="tablinks frontend html default-open"
-                onclick="openTab(event, 'html', 'frontend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/html5-FFFFFF?style=for-the-badge&logo=html5&logoColor=E34F26"
-                />
-              </button>
-              <button
-                class="tablinks frontend css"
-                onclick="openTab(event, 'css', 'frontend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/css3-FFFFFF?style=for-the-badge&logo=css3&logoColor=1572B6"
-                />
-              </button>
-              <button
-                class="tablinks frontend bootstrap"
-                onclick="openTab(event, 'bootstrap', 'frontend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/bootstrap-FFFFFF?style=for-the-badge&logo=bootstrap&logoColor=7952B3"
-                />
-              </button>
-              <button
-                class="tablinks frontend javascript"
-                onclick="openTab(event, 'javascript', 'frontend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/javascript-FFFFFF?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-                />
-              </button>
-              <button
-                class="tablinks frontend react"
-                onclick="openTab(event, 'react', 'frontend')"
-              >
-                <img
-                  src="https://img.shields.io/badge/react-FFFFFF?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-              </button>
-            </div>
+                  <div class="skills">
+                    <div class="header">
+                      <div class="title">ETC.</div>
+                    </div>
+                    <div class="content">
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/git-FFFFFF?style=for-the-badge&logo=git&logoColor=F05032" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>
+                              팀 구성원에 따라 브랜치를 생성하여 각자 개발 후 머지(Merge)를 통해 프로젝트를 병합하는 방식을 사용하여 팀 프로젝트를
+                              개발한 경험이 있습니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
 
-            <div id="html" class="tabcontent frontend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/html5-FFFFFF?style=for-the-badge&logo=html5&logoColor=E34F26"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    웹 페이지 구조와 콘텐츠를 작성이 가능하며, 많은 웹
-                    애플리케이션 프로젝트에서 사용 경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="css" class="tabcontent frontend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/css3-FFFFFF?style=for-the-badge&logo=css3&logoColor=1572B6"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    디자인 및 레이아웃을 다루는 데에 경험이 있으며, 웹 페이지의
-                    시각적인 요소를 개선할 수 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="bootstrap" class="tabcontent frontend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/bootstrap-FFFFFF?style=for-the-badge&logo=bootstrap&logoColor=7952B3"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    여러 템플릿을 조합하여 반응형 웹 페이지를 개발한 경험이
-                    있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="javascript" class="tabcontent frontend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/javascript-FFFFFF?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-                  />
-                </div>
-                <ul class="list">
-                  <li>ES5, ES6 표준 스타일 코드 작성이 가능합니다.</li>
-                  <li>
-                    DOM 노드를 조작하거나 CSS Animation 을 통한 디자인 및
-                    애니메이션 적용이 가능합니다.
-                  </li>
-                  <li>
-                    promise, async/await 비동기 처리를 구현한 경험이 있습니다.
-                  </li>
-                  <li>
-                    JQuery 를 통해 DOM 노드 조작, Ajax 비동기 통신 구현이
-                    가능합니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="react" class="tabcontent frontend">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/react-FFFFFF?style=for-the-badge&logo=react&logoColor=61DAFB"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    React Hook 의 State Hook 을 사용하여 State 를 조작하고,
-                    Effect Hook 을 통해 렌더링 전 · 후 동작을 설정한 경험이
-                    있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <div class="skills">
-            <div class="skills-title">DATABASES</div>
-
-            <div class="tab">
-              <button
-                class="tablinks database mysql default-open"
-                onclick="openTab(event, 'mysql', 'database')"
-              >
-                <img
-                  src="https://img.shields.io/badge/mysql-FFFFFF?style=for-the-badge&logo=mysql&logoColor=4479A1"
-                />
-              </button>
-              <button
-                class="tablinks database mariadb"
-                onclick="openTab(event, 'mariadb', 'database')"
-              >
-                <img
-                  src="https://img.shields.io/badge/mariadb-FFFFFF?style=for-the-badge&logo=mariadb&logoColor=003545"
-                />
-              </button>
-              <button
-                class="tablinks database oracle"
-                onclick="openTab(event, 'oracle', 'database')"
-              >
-                <img
-                  src="https://img.shields.io/badge/oracle-FFFFFF?style=for-the-badge&logo=oracle&logoColor=F80000"
-                />
-              </button>
-              <button
-                class="tablinks database mongodb"
-                onclick="openTab(event, 'mongodb', 'database')"
-              >
-                <img
-                  src="https://img.shields.io/badge/mongodb-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=47A248"
-                />
-              </button>
-            </div>
-
-            <div id="mysql" class="tabcontent database">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/mysql-FFFFFF?style=for-the-badge&logo=mysql&logoColor=4479A1"
-                  />
-                </div>
-                <ul class="list">
-                  <li>CRUD 쿼리를 작성할 수 있습니다.</li>
-                  <li>효율적인 쿼리를 위해 인덱스 활용이 가능합니다.</li>
-                  <li>
-                    복잡한 데이터 검색이 필요한 경우 서브 쿼리를 사용하여
-                    효율적인 데이터 추출을 수행할 수 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="mariadb" class="tabcontent database">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/mariadb-FFFFFF?style=for-the-badge&logo=mariadb&logoColor=003545"
-                  />
-                </div>
-                <ul class="list">
-                  <li>CRUD 쿼리를 작성할 수 있습니다.</li>
-                  <li>효율적인 쿼리를 위해 인덱스 활용이 가능합니다.</li>
-                  <li>
-                    복잡한 데이터 검색이 필요한 경우 서브 쿼리를 사용하여
-                    효율적인 데이터 추출을 수행할 수 있습니다.
-                  </li>
-                  <li>
-                    특정 테이블에 데이터 추가 시 관련 테이블의 데이터를 수정하는
-                    Trigger 를 구현한 경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="oracle" class="tabcontent database">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/oracle-FFFFFF?style=for-the-badge&logo=oracle&logoColor=F80000"
-                  />
-                </div>
-                <ul class="list">
-                  <li>CRUD 쿼리를 작성할 수 있습니다.</li>
-                  <li>효율적인 쿼리를 위해 인덱스 활용이 가능합니다.</li>
-                  <li>
-                    복잡한 데이터 검색이 필요한 경우 서브 쿼리를 사용하여
-                    효율적인 데이터 추출을 수행할 수 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="mongodb" class="tabcontent database">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/mongodb-FFFFFF?style=for-the-badge&logo=mongodb&logoColor=47A248"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    Reactive Web Application 의 Reactive Database 로 활용한
-                    경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <hr class="skills-hr" />
-
-          <div class="skills">
-            <div class="skills-title">ETC.</div>
-
-            <div class="tab">
-              <button
-                class="tablinks etc git default-open"
-                onclick="openTab(event, 'git', 'etc')"
-              >
-                <img
-                  src="https://img.shields.io/badge/git-FFFFFF?style=for-the-badge&logo=git&logoColor=F05032"
-                />
-              </button>
-              <button
-                class="tablinks etc github"
-                onclick="openTab(event, 'github', 'etc')"
-              >
-                <img
-                  src="https://img.shields.io/badge/github-FFFFFF?style=for-the-badge&logo=github&logoColor=181717"
-                />
-              </button>
-              <button
-                class="tablinks etc arduino"
-                onclick="openTab(event, 'arduino', 'etc')"
-              >
-                <img
-                  src="https://img.shields.io/badge/arduino-FFFFFF?style=for-the-badge&logo=arduino&logoColor=00979D"
-                />
-              </button>
-            </div>
-
-            <div id="git" class="tabcontent etc">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/git-FFFFFF?style=for-the-badge&logo=git&logoColor=F05032"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    팀 구성원에 따라 브랜치를 생성하여 각자 개발 후
-                    머지(Merge)를 통해 프로젝트를 병합하는 방식을 사용하여 팀
-                    프로젝트를 개발한 경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="github" class="tabcontent etc">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/github-FFFFFF?style=for-the-badge&logo=github&logoColor=181717"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    팀 · 개인 프로젝트, 클론 프로젝트, 학습 내용 등 개발에
-                    관련된 모든 것을 GitHub 를 통해 업로드하고 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="arduino" class="tabcontent etc">
-              <div class="skills-item">
-                <div class="skills-item-title">
-                  <img
-                    src="https://img.shields.io/badge/arduino-FFFFFF?style=for-the-badge&logo=arduino&logoColor=00979D"
-                  />
-                </div>
-                <ul class="list">
-                  <li>
-                    열화상 카메라, 초음파 센서, 디스플레이를 활용하여 코로나
-                    팬데믹 당시 무인으로 체온을 측정하는 의료 기기 제작을 목표로
-                    하는 프로젝트 경험이 있습니다.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="section-title">CERTIFICATE</div>
-        <section id="certificate">
-          <ul class="list timeline">
-            <li>2021.06. 정보 처리 기사</li>
-          </ul>
-        </section>
-
-        <div class="section-title">EDUCATION</div>
-        <section id="education">
-          <ul class="list timeline">
-            <li>2020.03. ~ 2021.02. 경민대학교 전공 심화 과정</li>
-            <li>2016.03. ~ 2020.02. 경민대학교 융합 소프트웨어과</li>
-            <li>2013.03. ~ 2016.01. 덕정 고등학교</li>
-          </ul>
-        </section>
+                      <div class="skill">
+                        <div class="icon">
+                          <img src="https://img.shields.io/badge/arduino-FFFFFF?style=for-the-badge&logo=arduino&logoColor=00979D" />
+                        </div>
+                        <div class="ability">
+                          <ul class="list">
+                            <li>
+                              열화상 카메라, 초음파 센서, 디스플레이를 활용하여 코로나 팬데믹 당시 무인으로 체온을 측정하는 의료 기기 제작을 목표로
+                              하는 프로젝트 경험이 있습니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+              <footer>-3-</footer>
+            </container>
+          </li>
+        </ul>
       </article>
-    </main>
+    </section>
     <footer></footer>
+    <div id="snackbar">다음 페이지</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="style.js"></script>
   </body>
