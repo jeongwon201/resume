@@ -462,8 +462,13 @@ a:hover {
           .detail {
             .title {
               text-align: center;
-              font-size: 16px;
+              font-size: 18px;
               font-weight: bold;
+
+              .link {
+                padding-bottom: 6px;
+                font-size: 13px;
+              }
             }
             .list {
               margin: 0;
@@ -478,13 +483,18 @@ a:hover {
                 padding-top: 3px;
                 padding-bottom: 3px;
               }
-
+              ul {
+                list-style-type: circle;
+                ul {
+                  list-style-type: disc;
+                  ul {
+                    list-style-type: circle;
+                  }
+                }
+              }
               .list-title {
                 font-weight: bold;
               }
-            }
-            .list ul {
-              list-style-type: circle;
             }
 
             .list > li {
@@ -513,13 +523,13 @@ a:hover {
           }
 
           .note-wrap {
-            width: 500px;
+            width: 800px;
             min-height: 500px;
-            padding: 35px;
+            padding: 35px 35px 50px 35px;
             margin: 0 22px 44px 22px;
             position: absolute;
             top: 10%;
-            left: 100px;
+            left: -200px;
             font-size: 13px;
             vertical-align: top;
             z-index: 10;
@@ -535,7 +545,7 @@ a:hover {
               border-radius: 6px/18px 0;
               position: absolute;
               top: -13px;
-              left: 215px;
+              left: 370px;
             }
           }
         }

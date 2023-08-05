@@ -395,8 +395,12 @@ a:hover {
 }
 #second-page section article .content .right-side .detail .title {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+}
+#second-page section article .content .right-side .detail .title .link {
+  padding-bottom: 6px;
+  font-size: 13px;
 }
 #second-page section article .content .right-side .detail .list {
   margin: 0;
@@ -411,11 +415,17 @@ a:hover {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-#second-page section article .content .right-side .detail .list .list-title {
-  font-weight: bold;
-}
 #second-page section article .content .right-side .detail .list ul {
   list-style-type: circle;
+}
+#second-page section article .content .right-side .detail .list ul ul {
+  list-style-type: disc;
+}
+#second-page section article .content .right-side .detail .list ul ul ul {
+  list-style-type: circle;
+}
+#second-page section article .content .right-side .detail .list .list-title {
+  font-weight: bold;
 }
 #second-page section article .content .right-side .detail .list > li {
   padding-top: 20px;
@@ -438,13 +448,13 @@ a:hover {
   opacity: 0.3;
 }
 #second-page section article .content .right-side .note-wrap {
-  width: 500px;
+  width: 800px;
   min-height: 500px;
-  padding: 35px;
+  padding: 35px 35px 50px 35px;
   margin: 0 22px 44px 22px;
   position: absolute;
   top: 10%;
-  left: 100px;
+  left: -200px;
   font-size: 13px;
   vertical-align: top;
   z-index: 10;
@@ -461,7 +471,7 @@ a:hover {
   border-radius: 6px/18px 0;
   position: absolute;
   top: -13px;
-  left: 215px;
+  left: 370px;
 }
 #second-page section > article:first-child .content .left-side {
   padding-top: 20px;
